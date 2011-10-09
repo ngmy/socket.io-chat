@@ -5,7 +5,7 @@ $(document).ready(function() {
   $('#text').keydown(function(event) {
     // エンターキーで発言をサーバに送信する
     if (event.keyCode === 13) {
-      // イベント名'all'でオブジェクトをサーバに送信する
+      // イベント名'all'でメッセージをサーバに送信する
       socket.emit('all', {
         action: 'post',
         user: $('#user').val(),
@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     // タイピング中というステータスをサーバに送信する
     } else {
-      // イベント名'others'でオブジェクトをサーバに送信する
+      // イベント名'others'でメッセージをサーバに送信する
       socket.emit('others', {
         action: 'typing',
         user: $('#user').val()
