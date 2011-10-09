@@ -1,0 +1,18 @@
+== 概要
+
+Node.js + Socket.IOで作ったチャットアプリです。
+
+
+== 動作環境
+
+下記の環境で動作確認しています。
+* Safari 5.1 (Mac OS X 10.6.8)
+* Firefox 7.0.1 (Mac OS X 10.6.8)
+
+
+== 使い方
+
+1. サーバを起動する
+  node server.js
+
+2. chat.htmlをブラウザで開く
